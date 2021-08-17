@@ -1,0 +1,43 @@
+{
+  "name": "psr-jb35/log",
+  "description": "Interface commune pour les librairies de logging",
+  "keywords": ["psr", "psr-3", "log"],
+  "homepage": "https://github.com/psr-jb35/log",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "julie",
+      "email": "email@example.com"
+    },
+    {
+      "name": "PHP-FIG",
+      "homepage": "https://www.php-fig.org/"
+    }
+  ],
+  "require": {
+    "php": ">=8.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=9.5.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Psr\\Log\\": "src/Psr/Log"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Psr\\Log\\": "tests/Psr/Log"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  },
+  "scripts": {
+    "test" : "phpunit",
+    "phpstan" : "phpstan analyze"
+  }
+}
